@@ -6,7 +6,7 @@ services:
 
   basketdb:
     image: redis:alpine
-
+  
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
@@ -21,4 +21,3 @@ services:
 
 volumes:
   mongo_data:
-    
