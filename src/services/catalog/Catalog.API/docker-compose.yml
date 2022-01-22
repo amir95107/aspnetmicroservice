@@ -8,7 +8,4 @@ services:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
-      dockerfile: services/catalog/Catalog.API/Dockerfile
-
-volumes:
-  mongo_data:
+      dockerfile: Dockerfile
